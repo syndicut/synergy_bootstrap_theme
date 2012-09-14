@@ -16,6 +16,8 @@ Gem::Specification.new do |s|
   s.requirements << 'none'
 
   #s.add_dependency('synergy', '~> 0.60.0')
+  s.add_dependency('twitter-bootstrap-rails')
+  s.add_dependency('bootstrap-addons-rails')
   s.add_dependency('dalli', '~> 1.0.3')
 end
 
