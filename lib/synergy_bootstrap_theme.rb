@@ -1,5 +1,4 @@
 require 'spree_core'
-require 'synergy_bootstrap_theme_hooks'
 
 module SynergyBootstrapTheme
   class Engine < Rails::Engine
