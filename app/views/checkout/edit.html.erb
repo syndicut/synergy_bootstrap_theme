@@ -15,13 +15,13 @@
   </div>
 
   <div class="span4">
-    <%= hook :checkout_summary_box do %>
+    <div data-hook="checkout_summary_box">
       <% if @order.state != 'confirm' %>
         <div id="checkout-summary" class=" pull-right">
           <%= render 'summary', :order => @order %>
         </div>
       <% end %>
-    <% end %>
+    </div>
   </div>
 
 </div>

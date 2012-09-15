@@ -1,7 +1,7 @@
 <% @body_id = 'login' %>
 <div id="existing-customer">
-  <%= hook :login do %>
+  <div data-hook="login">
     <%= render :partial => 'shared/login' %>
-  <% end %>
+  </div>
 </div>
 <%= hook :login_extras %>

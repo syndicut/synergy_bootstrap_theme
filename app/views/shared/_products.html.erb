@@ -15,7 +15,7 @@
     <% if Spree::Config[:show_zero_stock_products] || product.has_stock? %>
 
       <li class="span3 product" id="<%= dom_id(product) %>">
-        <%= hook :products_list_item, {:product => product} do %>
+        <div data-hook="products_list_item">
           <div class="thumbnail">
             <div class="caption centered">
               <%= link_to raw(product.name), product %>
@@ -27,7 +27,7 @@
               <span class="label label-info label-price"><%= product_price(product) %></span>
             </div>
           </div>
-        <% end %>
+        </div>
       </li>
     <% end %>
   <% end %>

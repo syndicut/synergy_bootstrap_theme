@@ -17,9 +17,9 @@
 
         <!-- сайдбар -->
         <% if content_for?(:sidebar) %>
-          <%= hook :sidebar do %>
+          <div data-hook="sidebar">
             <%= yield :sidebar %>
-          <% end %>
+          </div>
           <div class="span9">
         <% else %>
           <div class="span12">

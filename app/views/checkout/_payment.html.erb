@@ -1,6 +1,6 @@
 <fieldset id="payment">
   <legend><%= t("payment_information") %></legend>
-  <%= hook :checkout_payment_step, {:form => form} do %>
+  <div data-hook="checkout_payment_step">
     <% @order.available_payment_methods.each do |method| %>
       <p>
         <label>
@@ -21,7 +21,7 @@
     </ul>
     <br style='clear:both;' />
     <%= hook :coupon_code_field, {:form => form} %>
-  <% end %>
+  </div>
 </fieldset>
 
 
